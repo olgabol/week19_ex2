@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Имя</legend>
+            <div>
+                <label for="petsname">Кличка питомца</label>
+                <input type="text" id="petsname" class="petsname" />
+            </div><br />
+            <div>
+                <label for="name">Имя владельца</label>
+                <input type="text" id="name" />
+            </div> <br />
+            <div>
+                <label for="adress">Контакты владельца</label>
+                <input type="text" id="adress" />
+            </div>
+        </fieldset><br />
+        <div>
+            <p>Выберите породу</p>
+            <select id="breed">
+                <option value="Метис">Метис</option>
+                <option value="Европейская короткошерстная">Европейская корокошерстная</option>
+                <option value="Британская">Британская</option>
+                <option value="Мейнкун">Мейнкун</option>
+                <option value="Русская голубая">Русскя голубая</option>
+                <option value="Абиссинская">Абиссинская</option>
+                <option value="Регдол">Регдол</option>
+            </select>
+        </div>
+        <div>
+            <p>Чем питается?</p>
+            <input type="checkbox" id="food" value="1" />
+            Сухой корм<br />
+            <input type="checkbox" id="food" value="2" />
+            Влажный корм<br />
+            <input type="checkbox" id="food" value="3" />
+            Натуральный корм <br />
+        </div>
+        <div>
+            <label for="sex">Пол питомца</label>
+            <input type="radio" id="sex" name="sex" value="f" />Самка<br />
+            <input type="radio" name="sex" value="m">Самец
+        </div>
+        <div>
+            <p>Комментарий</p>
+            <textarea rows="10" cols="20">Если хотите добавить что-то важное, можно написать здесь</textarea>
+        </div>
+        <div>
+            <label for="foto">Можете добавить фотографию питомца</label>
+            <input type="file" id="foto" />
+        </div><br />
+        <div>
+            <button onclick="logCat()">OK</button>
+        </div>
+
+
+    </form>
+    <script src="/index.js">
+    </script>
+</body>
+
+</html>
